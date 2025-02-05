@@ -9,7 +9,7 @@ const chrome = require('selenium-webdriver/chrome');
 
 
 
-export const runScraper = async () => {
+const runScraper = async () => {
     const options = new chrome.Options();
     options.headless(); // Enable headless mode
 
