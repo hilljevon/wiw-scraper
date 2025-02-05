@@ -11,8 +11,7 @@ const chrome = require('selenium-webdriver/chrome');
 
 const runScraper = async () => {
     const options = new chrome.Options();
-    options.addArguments('--headless', '--disable-gpu', '--no-sandbox', '--disable-dev-shm-usage');
-
+    options.headless(); // Enable headless mode
 
     const driver = await new Builder().forBrowser('chrome').setChromeOptions(options).build();
     await driver.get('https://login.wheniwork.com/scheduler');
