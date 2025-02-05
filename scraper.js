@@ -59,5 +59,6 @@ const runScraper = async () => {
     }));
     console.log("Today's schedule")
     console.log(employeesWorkingToday)
+    return employeesWorkingToday
 }
 module.exports = { runScraper };
