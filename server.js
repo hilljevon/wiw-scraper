@@ -3,7 +3,7 @@ const cors = require('cors');
 const { runScraper } = require('./scraper'); // Import your scraper function
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 
 // Middleware
 app.use(cors()); // Allows your Next.js frontend to make API requests
