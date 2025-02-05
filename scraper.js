@@ -9,7 +9,7 @@ const chrome = require('selenium-webdriver/chrome');
 
 
 
-const runSel = async () => {
+export const runScraper = async () => {
     const options = new chrome.Options();
     options.headless(); // Enable headless mode
 
@@ -60,4 +60,4 @@ const runSel = async () => {
     console.log("Today's schedule")
     console.log(employeesWorkingToday)
 }
-runSel()
+module.exports = { runScraper };
